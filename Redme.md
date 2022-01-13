@@ -1,0 +1,1 @@
+3.1 När js filen läsers in kör den javascripten automatiskt. Om det inte ligger i en funktion, då körs den när den blir kallad. 
