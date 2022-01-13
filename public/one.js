@@ -31,4 +31,18 @@ const myFunkrtion = () => {
     });
 }
 
-document.getElementById('addData').addEventListener('click', myFunkrtion)
+document.getElementById('addData').addEventListener('click', myFunkrtion);
+document.getElementById('showData').addEventListener('click', showData);
+
+function showData() {
+    var lista = document.getElementById('lista');
+    lista.innerHTML = '';
+
+    unic.forEach((car, i) => {
+        var listItem = document.createElement('li');
+        listItem.innerText = car + ', ' + amount[i];
+        lista.append(listItem);
+    });
+}
+
+
